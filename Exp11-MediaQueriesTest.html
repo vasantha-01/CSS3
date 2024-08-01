@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Media Queries</title>
+        <style>
+            /*hsl:hue,saturation,lightness*/
+            .container{
+                margin: 0 auto;
+                background: hsl(154,96%,40%);
+                box-sizing: border-box;
+            }
+            /*Smart phones*/
+            @media screen and (min-width:767px){
+                .container{
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+            }
+            /*tablets,ipads(potrait and landscape)*/
+            @media screen and (min-width:767px) and (max-width:1024px){
+                .container{
+                    width: 750%;
+                    padding: 5px 10px;
+                }
+            }
+            /*Low resolution Desktops And Laptops*/
+            @media screen and (min-width:767px){
+                .container{
+                    width: 980%;
+                    padding: 5px 15px;
+                }
+            }
+            /*High resolution Desktops And Laptops*/
+            @media screen and (min-width:1280px){
+                .container{
+                    width: 1200%;
+                    padding: 5px 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p>Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin and contains essential nutrients such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth. Different species of animals have different feeding behaviours that satisfy the needs of their metabolisms and have evolved to fill a specific ecological niche within specific geographical contexts.</p>
+        </div>
+    </body>
+</html>
